@@ -1,0 +1,425 @@
+/*Reset CSS*/
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/*Importação da fonte*/
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Medium.ttf);
+}
+
+/*Variáveis de CSS*/
+:root{
+    --cor1: #13c522;
+    --cor2: hsla(0, 20%, 94%, 0.932);
+    --cor3: rgb(11, 11, 12);
+    --font: Roboto;
+}
+
+/*Corpo da página*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+}
+
+/*Cabeçalho*/
+#cabecalho{
+    background-color: var(--cor1);
+    padding: 20px;
+}
+
+/*Cabeçalho > Logo*/
+div.logo{
+    margin-right: 25px;
+    display: inline;
+}
+
+/*Cabeçalho > Navegação*/
+header #navegacao{
+    display: flex;
+    justify-content: flex-end;
+    float: right;
+}
+
+/*Cabeçalho > Navegação > Links*/
+header #navegacao a{
+    margin: 20px;
+    color: var(--cor3);
+    text-decoration: none;
+    transition: 1s;
+    padding: 4px;
+    border-radius: 10px;
+}
+header #navegacao a:hover{
+    background-color: var(--cor3);
+    color: var(--cor2);
+    text-decoration: underline;
+}
+
+/*Imagem de fundo*/
+.fundo{
+    background-image: url();
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+/*Imagem de fundo > Apresentação*/
+.fundo #apresentacao, #formulario{
+    width: 668px;
+    margin: 15px;
+    height: 320px;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.342);
+}
+.fundo #apresentacao h1, h2{
+    font-family: var(--font);
+    color: var(--cor1);
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+.fundo #apresentacao p{
+    color: var(--cor1);
+    margin: 20px 0;
+    text-align: justify;
+}
+
+/*Imagem de fundo > Formulario*/
+.fundo #formulario > form{
+    border: 1px solid var(--cor2);
+    border-radius: 5px;
+    padding: 3px;
+}
+.fundo #formulario form label{
+    color: var(--cor1);
+}
+.fundo #formulario form input{
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+}
+.fundo #formulario form button{
+    height: 30px;
+    width: 80px;
+    background-color: var(--cor1);
+    color: var(--cor2);
+    font-weight: 700;
+    cursor: pointer;
+    transition: 1s;
+}
+.fundo #formulario form button:hover{
+    background-color: #0a0008;
+}
+
+/*Corpo principal*/
+main{
+    background-color: var(--cor3);
+}
+
+/* Inicio da página Inicial*/
+
+#fundo_index {
+	width:940px;
+	height:550px;
+	margin:10px auto 20px auto;
+	background-color:rgb(226, 17, 17);
+}
+
+.box_img1 {
+	background:url(../imagens/paris.jpg)	
+	width:400px;
+	height: 300px;
+	float: left;
+	position: relative;
+	margin: 15px;
+	width: 450px;
+}
+
+.box_txt1 {
+	width:420px;
+	height:300px;
+	float:left;
+	position:relative;
+	margin:15px;
+}
+
+.box_txt1 h1 {
+	font-size:24px;
+	color:rgb(7, 31, 7);
+	font-weight:bold;
+	font-family:Arial, Helvetica, sans-serif;
+}
+.regua {
+	width:900px;
+	margin:center;
+	border:1px solid rgb(16, 3, 48);
+	clear:both;
+}
+/*Seção > h3*/
+#secao2 h3, #secao2 h3{
+    font-family: var(--font);
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.3em;
+}
+
+/*Locais*/
+#pacotes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 15px;
+    margin: 10px;
+}
+
+/*Caixas*/
+.caixa{
+    background-color: var(--cor1);
+    width: 80%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+/*Caixas > imagens*/
+.caixa img {
+    width: 100%;
+    margin-bottom: 7px;
+}
+
+/*Caixas > imagens > figcaption*/
+.descricao{
+    color: var(--cor3);
+    text-align: center;
+    margin-bottom: 15px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.349);
+}
+
+/*Caixas > h4*/
+.caixa h4{
+    font-family: var(--font);
+    font-weight: bold;
+    font-size: 1.1em;
+    text-align: center;
+    margin-bottom: 15px;
+    color: var(--cor3);
+}
+
+/*Caixas > p*/
+.caixa p{
+    color: var(--cor3);
+    text-align: justify;
+}
+
+/*Botão de planos*/
+#botao-plano{
+    padding: 15px;
+    background-color: var(--cor3);
+    color: var(--cor2);
+    border-radius: 10px;
+    font-weight: 900;
+    margin: 10px auto;
+    cursor: pointer;
+    transition: 1s;
+}
+#botao-plano:hover{
+    background-color: #fdbf04;
+}
+
+
+/*Secao 2*/
+#secao2{
+    border-top: 12px solid #136cb4;
+    background-color: var(--cor1);
+    color: var(--cor3);
+    padding: 20px;
+}
+
+/*Secao 3*/
+#secao3{
+    border-top: 12px solid #5c5c5c;
+    background-color: var(--cor2);
+    color: var(--cor3);
+    padding: 20px;
+}
+
+#secao3 > p{
+    text-align: justify;
+}
+
+/*Container*/
+#container-sobre{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/*Caixa de sobre*/
+.caixa-sobre{
+    background-color: var(--cor3);
+    color: var(--cor2);
+    width: 80%;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 15px;
+}
+
+/*Caixa sobre > h5*/
+.caixa-sobre h5{
+    font-family: var(--font);
+    margin: 13px;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+/*Rodapé*/
+#rodape{
+    background-color: var(--cor1);
+    padding: 10px;
+    margin-top: 40px;
+}
+
+/*Rodapé > container*/
+.container-rodape{
+    text-align: center;
+}
+
+/*Tooltips*/
+.container-rodape > a{
+    color: var(--cor3);
+}
+
+/*Título rodapé*/
+.container-rodape > h2{
+    font-size: 1.4em;
+    color: var(--cor3);
+    margin-top: 15px;
+} 
+
+/*Tablets*/
+@media (min-width: 768px) and (max-width: 1024px){
+    /*Locais*/
+    #pacotes{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 15px;
+        margin: 10px auto;
+    }
+
+    /*Caixas*/
+    .caixa{
+        background-color: var(--cor1);
+        width: 80%;
+        padding: 10px;
+        margin: 10px auto;
+        border-radius: 15px;
+    }
+
+    /*Botão de planos*/
+    #botao-plano{
+        padding: 15px;
+        background-color: var(--cor3);
+        color: var(--cor2);
+        border-radius: 10px;
+        font-weight: 900;
+        margin: 10px auto;
+        cursor: pointer;
+        transition: 1s;
+    }
+    #botao-plano:hover{
+        background-color: #fdbf04;
+    }
+}
+
+/*Celulares*/
+@media (min-width: 320px) and (max-width: 767px){
+    /*Cabeçalho*/
+    #cabecalho{
+        background-color: var(--cor1);
+        padding: 20px;
+        height: 270px;
+    }
+
+    /*Cabeçalho > Logo*/
+    div.logo{
+        margin-right: 30px;
+        display: block;
+    }
+    
+    /*Cabeçalho > Navegação*/
+    header #navegacao{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    /*Imagem de fundo*/
+    .fundo{
+        
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 125vh;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    /*Imagem de fundo > Apresentação*/
+    .fundo #apresentacao, #formulario{
+        width: 100%;
+        padding: 15px;
+        margin: 30px;
+        height: 320px;
+    }
+
+    /*Locais*/
+    #pacotes{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 15px;
+        margin: 10px auto;
+    }
+
+    /*Caixas*/
+    .caixa{
+        background-color: var(--cor1);
+        width: 80%;
+        padding: 10px;
+        margin: 10px auto;
+        border-radius: 15px;
+    }
+
+    /*Container*/
+    #container-sobre{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    /*Caixa de sobre*/
+    .caixa-sobre{
+        background-color: var(--cor3);
+        color: var(--cor2);
+        width: 90%;
+        border-radius: 15px;
+        margin: 10px auto;
+        padding: 15px;
+    }
+    
+}
